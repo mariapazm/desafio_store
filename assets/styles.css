@@ -8,3 +8,11 @@ body {
 .grid_container {
     grid-template-columns: 1fr;
 }
+
+.foto {
+    object-fit: cover;
+}
+
+.bici {
+    width: 28em;
+}
