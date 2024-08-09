@@ -1,18 +1,33 @@
 body {
-    margin: 0;
-    padding: 0;
     background-color: aliceblue;
-    color:rgb(0, 0, 33)
+    color:rgb(0, 0, 33);
+    font-family: titillium web;
+    margin: 0;
+    padding: 0; 
 }
+
+
 
 .grid_container {
     grid-template-columns: 1fr;
 }
 
-.foto {
-    object-fit: cover;
+.bici {
+    width: 30em;
+    height: 20em;
+    object-fit: contain;
+    background-color: white;
+
 }
 
-.bici {
-    width: 28em;
+.uno {
+    border: black solid 1px;
+}
+
+footer {
+    padding: 1em;
+    display: flex;
+    background-color: #014C8D;
+    color: #fff;
+    justify-content: center;
 }
