@@ -8,7 +8,15 @@ body {
 }
 
 .grid_container {
+    display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "nav" 
+    "hamgurguesa"
+    "aside"
+    "main"
+    "footer";
 }
 
 nav {
@@ -43,7 +51,7 @@ padding: 0;
     color: #fff;
     display: flex; 
     justify-content: space-between;
-    padding: 1em 2em 1em 2em;
+    padding: 2em 2em 2em 2em;
 
 }
 
@@ -52,7 +60,7 @@ form {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     background-color: lightgray; 
 }
 
@@ -65,16 +73,24 @@ form {
     color: rgb(65, 64, 64);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .bici {
-    width: 30em;
-    height: 20em;
+    width: 24em;
+    height: 16em;
     object-fit: scale-down;
     background-color: white;
 
 }
 
 figure {
-    width: 30em;
+    width: 24em;
     display: flex;
     flex-direction: column;
     align-items: center;
