@@ -2,14 +2,40 @@ body {
     background-color: aliceblue;
     color:rgb(0, 0, 33);
     font-family: titillium web;
+    font-size: 18px;
     margin: 0;
     padding: 0; 
 }
 
-
-
 .grid_container {
     grid-template-columns: 1fr;
+}
+
+nav {
+    align-items: center;
+    background-color: #014C8D;
+    color: #fff;  
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;   
+}
+
+.logo {
+    object-fit: scale-down;
+}
+
+.menu {
+display: flex; 
+list-style: none;
+padding: 0;
+}
+
+.pestanas {
+    margin: 0.2em;
+}
+
+.fa-bars {
+    padding: 0.5em;
 }
 
 .bici {
@@ -20,13 +46,55 @@ body {
 
 }
 
-.uno {
-    border: black solid 1px;
+figure {
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 1em;
+    border: lightgray 1px solid;
+    border-radius: 2%;
+    box-shadow: 5px 5px rgb(242, 241, 241);
+}
+
+button {
+    background-color: #014C8D;
+    color: #fff;
+    padding: 0.6em;
+    border-radius: 10%;
+    border-style: none;
+    width: 5.5em;
+    height: 3em;
+    
+}
+.paginador {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.item {
+    background-color: #fff;
+    color: #014C8D;
+    border: rgb(238, 237, 240) 1px solid;
+    text-decoration: none;
+    padding: 0.8em;
+}
+
+.paginas {
+    text-decoration: none;
+}
+
+.fa-brands {
+    margin: 0.2em;
 }
 
 footer {
-    padding: 1em;
+    padding: 0.8em;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     background-color: #014C8D;
     color: #fff;
     justify-content: center;
