@@ -8,14 +8,15 @@ body {
 }
 
 .grid_container {
-    /*grid-template-columns: 1fr;*/
+    grid-template-columns: 1fr;
 }
 
 nav {
     align-items: center;
     background-color: #014C8D;
-    color: #fff;  
+    color: #fff;
     display: flex;
+    flex-direction: column;  
     justify-content: space-evenly;
     padding: 1em;   
 }
@@ -25,8 +26,10 @@ nav {
 }
 
 .menu {
-display: flex; 
-list-style: none;
+    align-items: center;
+    display: flex; 
+    flex-direction: column;  
+    list-style: none;
 padding: 0;
 }
 
@@ -34,8 +37,14 @@ padding: 0;
     margin: 0.2em;
 }
 
-.fa-bars {
-    padding: 0.5em;
+.hamburguesa {
+    align-items: center;
+    background-color: blue;
+    color: #fff;
+    display: flex; 
+    justify-content: space-between;
+    padding: 1em 2em 1em 2em;
+
 }
 
 form {
